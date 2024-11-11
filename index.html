@@ -1,76 +1,95 @@
-<!-- INDEX STARTS HERE -->
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.6">
-
-    <title>MyProfile Template � Bootstrap</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet"> 
-    
-    <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timothy Mayor - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body>
 
-<body class="text-center">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="masthead mb-auto">
-            <div class="inner">
-    
-				<!-- LOGO -->
-                <h3 class="masthead-brand">Timothy Mayor</h3>
-				<!-- NAVIGATION MENU -->
-                <nav class="nav nav-masthead justify-content-center">
-                    <a class="nav-link active" href="index.html">Home</a>
-                    <a class="nav-link " href="pages/about.html">About Me</a>
-                    <a class="nav-link" href="pages/portfolio.html">Portfolio</a>
-                    <a class="nav-link" href="pages/diary.html">My Diary</a>
-                    <a class="nav-link" href="pages/contact.html">Contact</a>
-                </nav>
-            </div>
-        </header>
+    <!-- Navbar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#insights">Insights</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <div role="main" class="inner cover">
-            <br/>
-            <br/>
-			
-			<!-- BIG IMAGE ON HOMEPAGE -->
-            <img src="images/profile2.jpg" alt="My Main Image" width="500">
-            <br/>
-            <br/>
-
-            <h1 class="cover-heading">Software Engineer.</h1>
-
-            <p class="lead"> I am a remarkable Software Engineer with competencies in HTML, CSS, JavaScript, Reactjs & Nodejs! 
-            </p>
-			
-            <p class="lead">
-                <a href="pages/contact.html" class="btn btn-lg btn-secondary">Hire Me<br/></a>
-                <br/>
-            </p>
-			
+    <!-- Home Section with Hero -->
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to My Profile</h1>
+            <p>I am a Web Developer with expertise in modern web technologies.</p>
         </div>
+    </section>
 
-        <footer class="mastfoot mt-auto">
-            <div class="inner">
-                <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    <!-- About Section with Skill Progress Bars -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Here’s a summary of my skill set and experience.</p>
+        <div class="skills">
+            <div class="skill">
+                <p>HTML5</p>
+                <div class="progress-bar"><span style="width: 90%;"></span></div>
             </div>
-        </footer>
+            <div class="skill">
+                <p>CSS3</p>
+                <div class="progress-bar"><span style="width: 85%;"></span></div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress-bar"><span style="width: 80%;"></span></div>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <!-- Services Section -->
+    <section id="services">
+        <h2>My Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>UI/UX Design</li>
+            <li>SEO Optimization</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-item">Project 1</div>
+            <div class="project-item">Project 2</div>
+            <div class="project-item">Project 3</div>
+        </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section id="insights">
+        <h2>Insights</h2>
+        <p>Explore my blog for insights on web development.</p>
+        <div class="blog-posts">
+            <div class="post">Blog Post 1</div>
+            <div class="post">Blog Post 2</div>
+            <div class="post">Blog Post 3</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+
 </body>
-
 </html>
-
-<!-- INDEX ENDS HERE -->
